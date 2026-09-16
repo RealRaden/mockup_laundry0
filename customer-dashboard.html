@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Dashboard - Ada Laundry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gray-100 font-sans min-h-screen flex flex-col items-center justify-center p-4"
+  >
+    <div
+      class="w-full max-w-md bg-white shadow-lg border rounded-2xl min-h-[80vh] p-4 relative pb-20 overflow-hidden"
+    >
+      <!-- Back Button -->
+      <div class="mb-4">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-2 text-gray-500 hover:text-blue-600 transition-colors text-sm font-medium"
+          ><i class="fa-solid fa-arrow-left"></i> Kembali ke Portal</a
+        >
+      </div>
+      <!-- Profil & Poin -->
+      <div
+        class="flex justify-between items-center bg-gradient-to-r from-blue-600 to-indigo-700 p-5 rounded-2xl text-white shadow-md mb-6"
+      >
+        <div>
+          <p class="text-sm opacity-80">Halo, Budi Santoso</p>
+          <p class="font-bold text-lg flex items-center gap-2">
+            Membership: Gold <i class="fa-solid fa-medal text-yellow-300"></i>
+          </p>
+        </div>
+        <div class="text-right">
+          <p class="text-sm opacity-80">Poin Anda</p>
+          <p class="font-bold text-2xl">2,450</p>
+        </div>
+      </div>
+      <!-- CTA Button -->
+      <button
+        onclick="orderPickup()"
+        class="w-full mb-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95"
+      >
+        <i class="fa-solid fa-truck"></i> Pesan Penjemputan Sekarang
+      </button>
+      <!-- Tracking Laundry -->
+      <div class="border rounded-xl p-4">
+        <h3 class="font-bold text-gray-800 mb-4">Tracking Cucian (#ORD-099)</h3>
+        <div class="relative border-l-2 border-gray-200 ml-3 space-y-6">
+          <div class="relative pl-6">
+            <span
+              class="absolute -left-[9px] top-0 bg-green-500 w-4 h-4 rounded-full ring-4 ring-white"
+            ></span>
+            <p class="text-sm font-bold text-green-600">Pesanan Dibuat</p>
+            <p class="text-xs text-gray-500">Senin, 10:00 AM</p>
+          </div>
+          <div class="relative pl-6">
+            <span
+              class="absolute -left-[9px] top-0 bg-blue-500 w-4 h-4 rounded-full ring-4 ring-white shadow animate-pulse"
+            ></span>
+            <p class="text-sm font-bold text-blue-600">Kurir Menuju Lokasi</p>
+            <p class="text-xs text-gray-500">Estimasi tiba: 10:45 AM</p>
+          </div>
+          <div class="relative pl-6 opacity-40">
+            <span
+              class="absolute -left-[9px] top-0 bg-gray-300 w-4 h-4 rounded-full ring-4 ring-white"
+            ></span>
+            <p class="text-sm font-bold text-gray-600">Sedang Dicuci</p>
+          </div>
+          <div class="relative pl-6 opacity-40">
+            <span
+              class="absolute -left-[9px] top-0 bg-gray-300 w-4 h-4 rounded-full ring-4 ring-white"
+            ></span>
+            <p class="text-sm font-bold text-gray-600">Selesai & Diantar</p>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Nav -->
+      <div
+        class="absolute bottom-0 left-0 w-full bg-white border-t rounded-b-2xl flex justify-around p-4 text-gray-400"
+      >
+        <a href="#" class="text-blue-600 flex flex-col items-center"
+          ><i class="fa-solid fa-home text-xl"></i
+        ></a>
+        <a
+          href="#"
+          class="hover:text-blue-600 flex flex-col items-center transition-colors"
+          ><i class="fa-solid fa-clipboard-list text-xl"></i
+        ></a>
+        <a
+          href="#"
+          class="hover:text-blue-600 flex flex-col items-center transition-colors"
+          ><i class="fa-solid fa-gift text-xl"></i
+        ></a>
+        <a
+          href="#"
+          class="hover:text-blue-600 flex flex-col items-center transition-colors"
+          ><i class="fa-solid fa-user text-xl"></i
+        ></a>
+      </div>
+    </div>
+    <script>
+      // Simulasi interaksi JS         function orderPickup() {             alert('Mengalihkan ke formulir pemesanan penjemputan...');         }
+    </script>
+  </body>
+</html>
